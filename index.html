@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@531&display=swap" rel="stylesheet">
+    
+
+   
+    <title>Timer</title>
+</head>
+<body>
+    <div id="minutes" class="time">
+        <span class="time-title">минуты</span>
+        <div id="minutes-data" class="time-data">
+            <span class="number">00</span>
+        </div>
+        <div id="minutes-cover"  class="cover" ></div>
+    </div>
+
+    <div id="seconds" class="time">
+        <span class="time-title">секунды</span>
+        <div id="seconds-data" class="time-data">
+            <span class="number">00</span>
+        </div>
+        <div id="seconds-cover"  class="cover"></div>
+
+    </div>
+
+    <div id="controller">
+
+        <label for="input_minutes">ввести минуты: </label>
+        <input type="number" id="input_minutes" value="00" min="00" max="59" name="minutes">
+        <label for="input_seconds">ввести секунды: </label>
+        <input type="number" id="input_seconds" value="00" min="00" max="59" name="seconds">
+        <br>
+        <button class="submit" id="submit_time" >старт</button>
+        <button id="stop_timer">стоп</button>
+        <br><br>
+        <span id="info"> *щелкни на циферблат, чтобы добавить время</span>
+    </div>
+
+    <div id="complete">
+        <br><br><br><br><br>
+        <span>Отсчёт завершён</span>
+        <br><br>
+        <button id="again"> Начать сначала</button>
+    </div>
+
+<script src="teach.js"></script>
+
+</body>
+
+</html>

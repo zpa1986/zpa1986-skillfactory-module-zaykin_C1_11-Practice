@@ -1,0 +1,169 @@
+body {
+    font-family: 'Roboto+Slab', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 10px 250px 10px 10px 10px 250px 10px 1fr;
+    grid-template-rows: 1fr 200px 10px 90px 1fr;
+}
+
+
+#minutes {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#seconds {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#complete {
+    grid-column-start: 2;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #31d5e0;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 5;
+    color: #0b4d52;
+}
+
+#again {
+width: 300px;
+}
+
+#minutes-cover {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#seconds-cover {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#minutes-data {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#seconds-data {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+/*устанавливаем параметры панели управления*/
+#controller {
+    background-color: #ebe309;
+    grid-column-start: 2;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    color: #343d2d;
+}
+/*устанавливаем параметры окон ручного ввода времени*/
+#controller input {
+    border: none;
+    padding-left: 12px;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+#controller label {
+    margin: 15px;
+}
+
+/*устанавливаем параметры кнопок старт и стоп*/
+button {
+    background-color: white;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: 'Roboto+Slab', sans-serif;
+    font-size: 20px;
+    color: #969190;
+    outline: none;
+}
+/*параметры разметки при наведении мышью на кнопки*/
+button:hover {
+    cursor: pointer;
+    background-color: #C4C4C4;
+}
+/*параметры информации под таймером*/
+#info {
+    font-size: 12px;
+    color: #969190;
+}
+/*параметры основных полей таймера*/
+.time {
+    background-color: #50b023;
+    color: #fbfcfa;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+    grid-template-rows: 60px 1fr 10px;
+}
+
+.number {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 110px;
+}
+.time-data {
+    background-color: #46910d; 
+    display: grid;
+    padding-top: 10px;
+    grid-template-columns: 1fr 160px 1fr;
+    grid-template-rows: 1fr 110px 1fr;
+}
+
+.time-data span {
+    text-align: center;
+}
+
+.cover:hover {
+
+    opacity: 20%;
+    cursor: pointer;
+}
+
+.time-title {
+    font-size: 25px;
+    padding-top: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+    width: 100%;
+}
+
+.cover {
+    z-index: 2;
+    opacity: 0;
+    border-radius: 10px;
+    background-color: black;
+}
